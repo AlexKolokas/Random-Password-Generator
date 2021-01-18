@@ -1,4 +1,4 @@
-//errors to fix: 1) sometimes code have a space as digit...2) check if the min and max s int, the answers if is y or yes
+
 
 #include <iostream>
 #include <string>
