@@ -340,8 +340,14 @@ int AskMin()
 {
     int minchar;
 
-    cout<<"What is the minimum of characters that you want?  ";
+
+  cout<<"What is the minimum of characters that you want?  ";
     cin>>minchar;
+if (minchar==isalpha(minchar)){
+    cout<<"You gave letter instead of intiger try again!"<<endl;
+    exit(0);
+}
+
     return minchar;
 }
 
@@ -351,5 +357,10 @@ int AskMax()
     int maxchar;
     cout<<"what is the maximum of the characters that you want?  ";
     cin>>maxchar;
+    if (maxchar==isalpha(maxchar)){
+    cout<<"You gave letter instead of intiger try again!"<<endl;
+    exit(0);
+}
     return maxchar;
 }
+
